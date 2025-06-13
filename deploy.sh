@@ -42,7 +42,7 @@ sudo docker run -d \
   --name prometheus \
   --network monitoring-net \
   -p 9090:9090 \
-  -v $(pwd)/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml \
+  -v $(pwd)/prometheus/prometheus.yaml:/etc/prometheus/prometheus.yaml \
   prom/prometheus
 
 sudo docker run -d \

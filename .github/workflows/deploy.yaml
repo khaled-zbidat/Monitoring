@@ -76,6 +76,6 @@ jobs:
 
             echo 'Starting Docker Compose services...'
             cd ~/${REPO_NAME}
-            sudo docker compose -f docker-compose.monitoring.yaml pull
-            sudo docker compose -f docker-compose.monitoring.yaml up -d
+            sudo docker compose -f docker-compose.yaml pull
+            sudo docker compose -f docker-compose.yaml up -d
           "
